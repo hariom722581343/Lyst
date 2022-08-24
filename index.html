@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyst | Your World of Fashion</title>
+    <link rel="icon" href="https://files.worldwildlife.org/wwfcmsprod/images/Lion_WWFGIFTS_cover_2020/magazine_small/2wafu1bmcz_b21fc8e6.jpeg"  type="image/icon type" >
+    <style>
+        #navbar{
+            margin-top: -10px;
+        }
+        #navbar>div:nth-child(1){
+            display: flex;
+            width:25%;
+            height:20%;
+            padding-left: 75%;
+            align-items: center;
+        }
+        #navbar>div:nth-child(1)>p{
+            margin: 15px;
+            cursor: pointer ;
+        }
+        #navbar>div:nth-child(2){
+            display: flex;
+            width:100%;
+            height:30%;
+            border:1px solid balck;
+            justify-content: space-between;
+        }
+        #navbar>div:nth-child(2)>img{
+            width:150px;
+        }
+        #navbar>div:nth-child(2)>input{
+            width:70%;
+            height:40px;
+            align-self: center;
+            border: 2px solid black;
+        }
+        #banner{
+            width:100%;
+            height:510px;
+            border:1px solid black;
+            margin-top: 20px;
+            margin-left: -8px;
+        }
+        #banner>img{
+            width:102%;
+        }
+        #grid1{
+            display:grid;
+            grid-template-columns: repeat(4,400px);
+            grid-template-rows: repeat(3,300px);
+            margin-top: 80px;
+        }
+        #grid1>div{
+            border:2px solid black;
+            width:100%;
+            display: flex;
+            
+        }
+        #grid1>div>div{
+            border:1px solid red;
+            width:100px;
+            height:295px;
+        }
+        #grid1>div>div>h3{
+            position:absolute;        
+            transform: rotate(-90deg);
+            padding-top:50px; 
+            text-transform: uppercase;
+            vertical-align: text-bottom;
+
+        };
+          
+        #grid1>div>img{
+            width:300px;
+            height:300px;
+            justify-content: flex-end;
+        }
+       
+        #grid2{
+            display: grid;
+            grid-template-columns: repeat(3,450px);
+            grid-template-rows: repeat(8,365px);
+            margin-top: 80px;
+        }
+        #grid2>div{
+            border:1px solid black;
+            display: flex;
+            text-transform: uppercase;
+            background-color:  #f5f4f2;
+            text-align: center;
+            font-size: larger;
+        }
+        #grid2>div>img{
+            width:340px;
+            height:300px;
+            padding-top: 65px;
+            padding-left: 20px;
+        }
+        .big{
+            font-size: 70px;
+            background-color:  #f5f4f2;
+        }
+        #help{
+            font-size: large;
+            padding: 0px;
+            width:70px;
+            height:30px;
+        }
+        #join{
+            background-color: black;
+            color: white;
+            padding: 5px;
+        }
+        #grid3{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            height:860px;
+            border:1px solid black;
+            margin-top: 80px;
+        }
+        #grid3>div{
+            height: 98%;
+            margin:auto;
+            text-align: center;
+            font-size: larger;
+            padding: 10px;
+            background-color:antiquewhite;
+        }
+        #grid3>div>h2{
+            font-size: 130px;
+            text-align: center;
+        }
+        #grid3>:nth-child(4)>h2{
+            font-size: 80px;
+        }
+        #grid3>:nth-child(4):hover{
+            border:2px solid black;
+            background-color: #c9bffb;
+        }
+        #grid3>:nth-child(4)>button{
+            padding: 20px;
+            color:wheat;
+            background-color: black;
+        }
+        #grid3>:nth-child(4){
+            background-color:#cafc4f;
+        }
+        #grid3>div>h4{
+            font-size: larger;
+        }
+        #grid4{
+            background-color: azure;
+            border:1px solid red;
+            margin-top: 80px;
+            height: 400px;
+            display:inline-flex
+        }
+        #grid4>div{
+            border:1px solid red;
+            height:150px;
+            font-size: 20px;
+            width:80%;
+            margin: auto;
+            padding: 20px;
+        }
+        #grid4>h4{
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+   <div id="navbar">
+    <div>
+        <p>CN-US$</p> 
+        <select id="help">
+            <option value="Help center">Help</option>
+            <option value="Help center">Help center</option>
+            <option value="Contact us">Contact us</option>
+            <option value="About us">About us</option>
+            <option value="Careers">Careers</option>
+        </select>
+
+        <p>Sign In</p> <p id="join">Join</p>
+    </div>
+    <div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKyEuqiB8uBDJNjItv3pJcOtnRYu4i27TrLg&usqp=CAU" alt="">
+        <h2>WOMEN</h2>
+        <h2>MEN</h2>
+        <input style.width="60%" type="text"  placeholder="   Search (e.g. Valentino Dresses)">
+   </div> 
+    </div>
+   <div id="banner">
+    <img src="https://cdna.lystit.com/cms/ENG_header_XL_9f9e2af236_615828663f.jpg" alt="">
+   </div>
+   <div id="grid1">
+    <div>
+        <div>
+        <h3>BAG AN ICON
+        </h3>
+        </div>
+        <img src="https://cdna.lystit.com/cms/ea59bbea_bf2d_4441_90aa_b0a1a8ee614b_21dfec2728.png" alt="">
+    </div>
+    <div>
+        <div>
+        <h3>30 UNDER 300
+        </h3>
+        </div>
+        <img src="https://cdna.lystit.com/cms/2c09c3f3_34a7_4302_9a44_416fd3fa5d76_10988971ba.png" alt="">
+    </div>
+    <div>
+        <div>
+        <h3>TREND TO KNOW: WHITE NIGHTS
+        </h3>
+        </div>
+        <img src="https://cdna.lystit.com/cms/3c70c00c_25c6_42ef_8e12_6a5e0e5819e7_fd338f521d.png" alt="">
+    </div>
+    <div>
+        <div>
+        <h3>THIS IS FASHION
+        </h3>
+        </div>
+        <img src="https://cdna.lystit.com/cms/cd20a12e_e37b_4e36_8325_ed1a2b420728_b7596dca3b.png" alt="">
+    </div>
+    <div>
+        <div>
+        <h3>REFINED GLAMOUR
+        </h3>
+        </div>
+        <img src="https://cdna.lystit.com/cms/c10401b4_0e1c_4b30_8ebd_302ad87518f7_79739750c4.png" alt="">
+    </div>
+    <div>
+        <div>
+        <h3>Shop Boden Up to 15% Off with Code F2L9 
+        </h3>
+        </div>
+        <img src="https://cdna.lystit.com/cms/Boden_WW_mobile600x600_No_Logo_9f0a33ced2.jpg" alt="">
+    </div>
+    <div>
+        <div>
+        <h3>YOOX | Don’t miss IT - Designers sales now up to 85% OFF!
+        </h3>
+        </div>
+        <img src="https://cdna.lystit.com/cms/Top_Lyst_Aug600x600_d8c778d3df.jpg" alt="">
+    </div>
+    <div>
+        <div>
+        <h3>NET-A-PORTER | explore our roundup of the most noteworthy shoes
+        </h3>
+        </div>
+        <img src="https://cdna.lystit.com/cms/Lyst_UK_600x600_2ae1a26508.jpg" alt="">
+    </div>
+    <div>
+        <div>
+        <h3>SABRINA ZENG | Sustainable Designer Leather Goods
+        </h3>
+        </div>
+        <img src="https://cdna.lystit.com/cms/SZ_LYST_Hammock_Camel_1_bc0dd8c317.jpg" alt="">
+    </div>
+    <div>
+        <div>
+        <h3>Voted one of best stores in the world VougeItalia
+        </h3>
+        </div>
+        <img src="https://cdna.lystit.com/cms/madison_beverly_hills_lyst_63f59bd7db.jpg" alt="">
+    </div>
+   </div>
+
+   <div id="grid2">
+    <div>
+        <h3 class="big">Breakout brands
+        </h3>
+    </div>
+    <div>
+        <h3>Patou
+        </h3>
+        <img src="https://cdna.lystit.com/cms/My_Post_81_76121ffa01.jpg" alt="">
+    </div>
+    <div>
+        <h3>Gucci
+        </h3>
+        <img src="https://cdna.lystit.com/cms/designer_rail_gucci_eca9e74796.jpg" alt="">
+    </div>
+    <div>
+        <h3>Saint Laurent
+        </h3>
+        <img src="https://cdna.lystit.com/cms/designer_rail_saint_laurent_2031eb80f7.jpeg" alt="">
+    </div>
+    <div>
+        <h3>Off-White c/o Virgil Abloh
+        </h3>
+        <img src="https://cdna.lystit.com/cms/designer_rail_off_white_co_virgil_abloh_d8c6b37a9f.jpeg" alt="">
+    </div>
+    <div>
+        <h3>Balenciaga
+        </h3>
+        <img src="https://cdna.lystit.com/cms/designer_rail_balenciaga_215cbc0fe0.jpeg" alt="">
+    </div>
+    <div>
+        <h3>Nike
+        </h3>
+        <img src="https://cdna.lystit.com/cms/designer_rail_nike_c3045162ba.png" alt="">
+    </div>
+    <div>
+        <h3>Dolce & Gabbana
+        </h3>
+        <img src="https://cdna.lystit.com/cms/designer_rail_dolce_gabbana_bcb7049bb0.jpeg" alt="">
+    </div>
+    <div>
+        <h3>Moncler
+        </h3>
+        <img src="https://cdna.lystit.com/cms/designer_rail_moncler_bcdcdc131d.jpeg" alt="">
+    </div>
+    <div>
+        <h3>Valentino
+        </h3>
+        <img src="https://cdna.lystit.com/cms/designer_rail_valentino_421c18fab0.jpeg" alt="">
+    </div>
+    <div>
+        <h3>Eton Shirts
+        </h3>
+        <img src="https://cdna.lystit.com/cms/eton_sweden_shirt_da4fff6982.jpg" alt="">
+    </div>
+    <div>
+        <h3>Galvan London Dresses
+        </h3>
+        <img src="https://cdna.lystit.com/cms/galvan_dress_cb31d2b319.jpg" alt="">
+    </div>
+    <div>
+        <h3 class="big">Trending now
+        </h3>
+    </div>
+    <div>
+        <h3>Roberta Roller Rabbit Nightwear and sleepwear
+        </h3>
+        <img src="https://cdna.lystit.com/cms/roberta_roller_rabbit_480eb63ae6.jpg" alt="">
+    </div>
+    <div>
+        <h3>Rhude T-shirts
+        </h3>
+        <img src="https://cdna.lystit.com/cms/rhude_shirt_c6bc886e07.jpg" alt="">
+    </div>
+    <div>
+        <h3>A Bathing Ape Jackets
+        </h3>
+        <img src="https://cdna.lystit.com/cms/a_bathing_ape_jacket_c40f13e02f.jpg" alt="">
+    </div>
+    <div>
+        <h3>Johnny Was Beachwear and swimwear outfits
+        </h3>
+        <img src="https://cdna.lystit.com/cms/johnny_was_beachwear_812a36ae2c.jpg" alt="">
+    </div>
+    <div>
+        <h3>CASABLANCA T-shirts
+        </h3>
+        <img src="https://cdna.lystit.com/cms/casablanca_shirt_b83fb98040.jpg" alt="">
+    </div>
+    <div>
+        <h3>Bonobos Shorts
+        </h3>
+        <img src="https://cdna.lystit.com/cms/bonobos_shorts_6a3e83ea91.jpg" alt="">
+    </div>
+    <div>
+        <h3 class="big">Hot right now
+        </h3>
+    </div>
+    <div>
+        <h3>Balenciaga Beachwear and swimwear outfits
+        </h3>
+        <img src="https://cdna.lystit.com/cms/balenciaga_swimwear_a06622c701.jpg" alt="">
+    </div>
+    <div>
+        <h3>PANDORA Bracelets
+        </h3>
+        <img src="https://cdna.lystit.com/cms/pandora_bracelets_1e97a9f038.jpg" alt="">
+    </div>
+    <div>
+        <h3>Maison Mihara Yasuhiro Sneakers
+        </h3>
+        <img src="https://cdna.lystit.com/cms/maison_mihara_shoes_4f566934fb.jpg" alt="">
+    </div>
+    <div>
+        <h3>Chimi Sunglasses
+        </h3>
+        <img src="https://cdna.lystit.com/cms/chimi_sunglasses_1629b146e4.jpg" alt="">
+    </div>
+</div>
+
+<div id="grid3">
+    <div>
+        <h2>1</h2>
+        <h4>THE BIGGEST SELECTION</h4>
+        <p>Shop over 12,000 brands and stores in one place</p>
+        <p>Find exactly what you want with powerful search and personal recommendations.</p>
+    </div>
+    <div>
+        <h2>2</h2>
+        <h4>THE HOTTEST PRODUCTS</h4>
+        <p>See what’s new and what’s trending.</p>
+        <p>Hit the heart to receive alerts on the latest drops from your favourite brands.</p>
+    </div>
+    <div>
+        <h2>3</h2>
+        <h4>THE BEST PRICES</h4>
+        <p>Compare prices and shipping options across thousands of stores.</p>
+        <p>Compare prices and shipping options across thousands of stores.</p>
+    </div>
+    <div>
+        <h2>SIGN UP FOR SMARTER SHOPPING</h2>
+        <button>Join--></button>
+    </div>
+</div>
+<div id="grid4">
+<h4>MOST WANTED</h4>
+<div>
+    <P>COLOR BLOCK SWIMSUITS</P>
+    <P> THIGH-HIGH BOOTS</P>
+    <P>SUSEN BAGS</P>
+    <P> NIKE AIR MAX PRE DAY</P>
+    <P>GLITTER BIKINIS</P>
+</div>
+<div>
+     <P>VEJA V12 SNEAKERS</P>
+     <P> REEBOK INSTAPUMP SNEAKERS</P>
+     <P>NIKE STEFAN JANOSKI MAX SNEAKERS</P>
+     <P>MEN'S STRIPED JOGGERS</P>
+     <P>LEOPARD-PRINT SHIRTS</P>
+</div>
+</div>
+</body>
+</html>
