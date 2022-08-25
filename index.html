@@ -6,262 +6,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lyst | Your World of Fashion</title>
     <link rel="icon" href="https://files.worldwildlife.org/wwfcmsprod/images/Lion_WWFGIFTS_cover_2020/magazine_small/2wafu1bmcz_b21fc8e6.jpeg"  type="image/icon type" >
-    <style>
-        #navbar{
-            margin-top: -10px;
-        }
-        #navbar>div:nth-child(1){
-            display: flex;
-            width:25%;
-            height:20%;
-            padding-left: 75%;
-            align-items: center;
-        }
-        #navbar>div:nth-child(1)>p{
-            margin: 15px;
-            cursor: pointer ;
-        }
-        #navbar>div:nth-child(2){
-            display: flex;
-            width:100%;
-            height:30%;
-            border:1px solid balck;
-            justify-content: space-between;
-        }
-        #navbar>div:nth-child(2)>img{
-            width:150px;
-        }
-        #navbar>div:nth-child(2)>input{
-            width:70%;
-            height:40px;
-            align-self: center;
-            border: 2px solid black;
-        }
-        #banner{
-            width:100%;
-            height:510px;
-            border:1px solid black;
-            margin-top: 20px;
-            margin-left: -8px;
-        }
-        #banner>img{
-            width:102%;
-        }
-        #grid1{
-            display:grid;
-            grid-template-columns: repeat(4,400px);
-            grid-template-rows: repeat(3,300px);
-            margin-top: 80px;
-        }
-        #grid1>div{
-            border:2px solid black;
-            width:100%;
-            display: flex;
-            
-        }
-        #grid1>div>div{
-            border:1px solid red;
-            width:100px;
-            height:295px;
-        }
-        #grid1>div>div>h3{
-            position:absolute;        
-            transform: rotate(-90deg);
-            padding-top:50px; 
-            text-transform: uppercase;
-            vertical-align: text-bottom;
-
-        };
-          
-        #grid1>div>img{
-            width:300px;
-            height:300px;
-            justify-content: flex-end;
-        }
-       
-        #grid2{
-            display: grid;
-            grid-template-columns: repeat(3,450px);
-            grid-template-rows: repeat(8,365px);
-            margin-top: 80px;
-        }
-        #grid2>div{
-            border:1px solid black;
-            display: flex;
-            text-transform: uppercase;
-            background-color:  #f5f4f2;
-            text-align: center;
-            font-size: larger;
-        }
-        #grid2>div>img{
-            width:340px;
-            height:300px;
-            padding-top: 65px;
-            padding-left: 20px;
-        }
-        .big{
-            font-size: 70px;
-            background-color:  #f5f4f2;
-        }
-        #help{
-            font-size: large;
-            padding: 0px;
-            width:70px;
-            height:30px;
-        }
-        #join{
-            background-color: black;
-            color: white;
-            padding: 5px;
-        }
-        #grid3{
-            display: grid;
-            grid-template-columns: repeat(4,1fr);
-            height:860px;
-            border:1px solid black;
-            margin-top: 80px;
-        }
-        #grid3>div{
-            height: 98%;
-            margin:auto;
-            text-align: center;
-            font-size: larger;
-            padding: 10px;
-            background-color:antiquewhite;
-        }
-        #grid3>div>h2{
-            font-size: 130px;
-            text-align: center;
-        }
-        #grid3>:nth-child(4)>h2{
-            font-size: 80px;
-        }
-        #grid3>:nth-child(4):hover{
-            border:2px solid black;
-            background-color: #c9bffb;
-        }
-        #grid3>:nth-child(4)>button{
-            padding: 20px;
-            color:wheat;
-            background-color: black;
-        }
-        #grid3>:nth-child(4){
-            background-color:#cafc4f;
-        }
-        #grid3>div>h4{
-            font-size: larger;
-        }
-        #grid4{
-            background-color: azure;
-            border:1px solid red;
-            margin-top: 80px;
-            height: 400px;
-            display:inline-flex
-        }
-        #grid4>div{
-            border:1px solid red;
-            height:150px;
-            font-size: 20px;
-            width:80%;
-            margin: auto;
-            padding: 20px;
-        }
-        #grid4>h4{
-            font-size: large;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
-   <div id="navbar">
-    <div>
-        <p>CN-US$</p> 
-        <select id="help">
-            <option value="Help center">Help</option>
-            <option value="Help center">Help center</option>
-            <option value="Contact us">Contact us</option>
-            <option value="About us">About us</option>
-            <option value="Careers">Careers</option>
-        </select>
-
-        <p>Sign In</p> <p id="join">Join</p>
-    </div>
-    <div>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKyEuqiB8uBDJNjItv3pJcOtnRYu4i27TrLg&usqp=CAU" alt="">
-        <h2>WOMEN</h2>
-        <h2>MEN</h2>
-        <input style.width="60%" type="text"  placeholder="   Search (e.g. Valentino Dresses)">
-   </div> 
-    </div>
+    <div id="navbar">
+        <div>
+            <p>CN-US$</p> 
+            <select id="help">
+                <option value="Help center">Help</option>
+                <option value="Help center">Help center</option>
+                <option value="Contact us">Contact us</option>
+                <option value="About us">About us</option>
+                <option value="Careers">Careers</option>
+            </select>
+    
+            <p>Sign In</p> <p id="join">Join</p>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKyEuqiB8uBDJNjItv3pJcOtnRYu4i27TrLg&usqp=CAU" alt="">
+            <h2>WOMEN</h2>
+            <h2>MEN</h2>
+            <input style.width="60%" type="text"  placeholder="   Search (e.g. Valentino Dresses)">
+       </div> 
+        </div>
    <div id="banner">
     <img src="https://cdna.lystit.com/cms/ENG_header_XL_9f9e2af236_615828663f.jpg" alt="">
    </div>
    <div id="grid1">
     <div>
         <div>
-        <h3>BAG AN ICON
+        <h3 class="vertical">BAG AN ICON
         </h3>
         </div>
         <img src="https://cdna.lystit.com/cms/ea59bbea_bf2d_4441_90aa_b0a1a8ee614b_21dfec2728.png" alt="">
     </div>
     <div>
         <div>
-        <h3>30 UNDER 300
+        <h3 class="vertical">30 UNDER 300
         </h3>
         </div>
         <img src="https://cdna.lystit.com/cms/2c09c3f3_34a7_4302_9a44_416fd3fa5d76_10988971ba.png" alt="">
     </div>
     <div>
         <div>
-        <h3>TREND TO KNOW: WHITE NIGHTS
+        <h3 class="vertical">TREND TO KNOW: WHITE NIGHTS
         </h3>
         </div>
         <img src="https://cdna.lystit.com/cms/3c70c00c_25c6_42ef_8e12_6a5e0e5819e7_fd338f521d.png" alt="">
     </div>
     <div>
         <div>
-        <h3>THIS IS FASHION
+        <h3 class="vertical">THIS IS FASHION
         </h3>
         </div>
         <img src="https://cdna.lystit.com/cms/cd20a12e_e37b_4e36_8325_ed1a2b420728_b7596dca3b.png" alt="">
     </div>
     <div>
         <div>
-        <h3>REFINED GLAMOUR
+        <h3 class="vertical">REFINED GLAMOUR
         </h3>
         </div>
         <img src="https://cdna.lystit.com/cms/c10401b4_0e1c_4b30_8ebd_302ad87518f7_79739750c4.png" alt="">
     </div>
     <div>
         <div>
-        <h3>Shop Boden Up to 15% Off with Code F2L9 
+        <h3 class="vertical">Shop Boden Up to 15% Off with Code F2L9 
         </h3>
         </div>
         <img src="https://cdna.lystit.com/cms/Boden_WW_mobile600x600_No_Logo_9f0a33ced2.jpg" alt="">
     </div>
     <div>
         <div>
-        <h3>YOOX | Don’t miss IT - Designers sales now up to 85% OFF!
+        <h3 class="vertical">YOOX | Don’t miss IT - Designers sales now up to 85% OFF!
         </h3>
         </div>
         <img src="https://cdna.lystit.com/cms/Top_Lyst_Aug600x600_d8c778d3df.jpg" alt="">
     </div>
     <div>
         <div>
-        <h3>NET-A-PORTER | explore our roundup of the most noteworthy shoes
+        <h3 class="vertical">NET-A-PORTER | explore our roundup of the most noteworthy shoes
         </h3>
         </div>
         <img src="https://cdna.lystit.com/cms/Lyst_UK_600x600_2ae1a26508.jpg" alt="">
     </div>
     <div>
         <div>
-        <h3>SABRINA ZENG | Sustainable Designer Leather Goods
+        <h3 class="vertical">SABRINA ZENG | Sustainable Designer Leather Goods
         </h3>
         </div>
         <img src="https://cdna.lystit.com/cms/SZ_LYST_Hammock_Camel_1_bc0dd8c317.jpg" alt="">
     </div>
     <div>
         <div>
-        <h3>Voted one of best stores in the world VougeItalia
+        <h3 class="vertical">Voted one of best stores in the world VougeItalia
         </h3>
         </div>
         <img src="https://cdna.lystit.com/cms/madison_beverly_hills_lyst_63f59bd7db.jpg" alt="">
@@ -415,19 +253,125 @@
 <div id="grid4">
 <h4>MOST WANTED</h4>
 <div>
-    <P>COLOR BLOCK SWIMSUITS</P>
-    <P> THIGH-HIGH BOOTS</P>
-    <P>SUSEN BAGS</P>
-    <P> NIKE AIR MAX PRE DAY</P>
-    <P>GLITTER BIKINIS</P>
+    <div>COLOR BLOCK SWIMSUITS</div>
+    <div> THIGH-HIGH BOOTS</div>
+    <div>SUSEN BAGS</div>
+    <div> NIKE AIR MAX PRE DAY</div>
+    <div>GLITTER BIKINIS</div>
 </div>
 <div>
-     <P>VEJA V12 SNEAKERS</P>
-     <P> REEBOK INSTAPUMP SNEAKERS</P>
-     <P>NIKE STEFAN JANOSKI MAX SNEAKERS</P>
-     <P>MEN'S STRIPED JOGGERS</P>
-     <P>LEOPARD-PRINT SHIRTS</P>
+     <div>VEJA V12 SNEAKERS</div>
+     <div> REEBOK INSTAPUMP SNEAKERS</div>
+     <div>NIKE STEFAN JANOSKI MAX SNEAKERS</div>
+     <div>MEN'S STRIPED JOGGERS</div>
+     <div>LEOPARD-PRINT SHIRTS</div>
 </div>
 </div>
+<div id="grid5">
+    <div>
+        <h4>WOMEN'S CLOTHING</h4>
+        <p>Suits</p>
+        <p>Shorts</p>
+        <p>Hosiery</p>
+        <p>Lingerie</p>
+        <p>Pants, Slacks and Chinos</p>
+        <p>Tops</p>
+        <p>Jackets</p>
+        <p>Sweaters and knitwear</p>
+        <p>+More</p>
+    </div>
+    <div>
+        <h4>MEN'S CLOTHING</h4>
+        <p>Suits</p>
+        <p>Shorts</p>
+        <p>T-shirts</p>
+        <p>Underwear</p>
+        <p>Pants, Slacks and Chinos</p>
+        <p>Jackets</p>
+        <p>Activewear, gym and workout clothes</p>
+        <p>Sweaters and knitwear</p>
+        <p>+More</p>
+    </div>
+    <div>
+        <h4>WOMEN'S SHOES</h4>
+        <p>Boots</p>
+        <p>Sneakers</p>
+        <p>Flats and flat shoes</p>
+        <p>Heels</p>
+    </div>
+    <div>
+        <h4>MEN'S SHOES</h4>
+        <p>Slip-on shoes</p>
+        <p>Boots</p>
+        <p>Lace-ups</p>
+        <p>Sneakers</p>
+        <p>Sandals, slides and flip flops</p>
+    </div>
+    <div>
+        <h4>WOMEN'S ACCESSORIES</h4>
+        <p>Wallets and cardholders</p>
+        <p>Sunglasses</p>
+        <p>Face masks</p>
+        <p>Headbands, hair clips and hair accessories</p>
+        <p>Belts</p>
+        <p>Gloves</p>
+        <p>Hats</p>
+        <p>Phone cases</p>
+        <p>+More</p>
+    </div>
+    <div>
+        <h4>MEN'S ACCESSORIES</h4>
+        <p>Wallets and cardholders</p>
+        <p>Sunglasses</p>
+        <p>Face masks</p>
+        <p>Ties</p>
+        <p>Gloves</p>
+        <p>Belts</p>
+        <p>Hats</p>
+        <p>Cufflinks</p>
+        <p>+More</p>
+    </div>
+    <div>
+        <h4>WOMEN'S BAGS</h4>
+        <p>Makeup bags and cosmetic cases</p>
+        <p>Bucket bags and bucket purses</p>
+        <p>Belt bags, waist bags and fanny packs</p>
+        <p>Bag accessories</p>
+        <p>Satchel bags and purses</p>
+        <p>Shoulder bags</p>
+        <p>Beach bag tote and straw bags</p>
+        <p>Hobo bags and purses</p>
+        <p>+More</p>
+    </div>
+    <div>
+        <h4>MEN'S BAGS</h4>
+        <p>Belt Bags, waist bags and fanny packs</p>
+        <p>Messenger bags</p>
+        <p>Pouches and wristlets</p>
+        <p>Toiletry bags and wash bags</p>
+        <p>Cases</p>
+        <p>Tote bags</p>
+        <p>Duffel bags and weekend bags</p>
+        <p>Gym bags and sports bags</p>
+        <p>+More</p>
+    </div>
+    <div>
+        <h4>WOMEN'S JEWELRY</h4>
+        <p>Earrings and ear cuffs</p>
+        <p>Brooches</p>
+        <p>Rings</p>
+        <p>Bracelets</p>
+        <p>Necklaces</p>
+    </div>
+    <div>
+        <h4>MEN'S JEWELRY</h4>
+        <p>Earrings and ear cuffs</p>
+        <p>Brooches</p>
+        <p>Rings</p>
+        <p>Bracelets</p>
+        <p>Necklaces</p>
+    </div>
+</div>
+
 </body>
 </html>
