@@ -429,3 +429,58 @@ body {
   text-decoration: underline;
   font-size: 80px;
 }
+
+
+
+@media all and (min-width:481px) and (max-width:768px){
+  #grid1 {
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: repeat(6, 300px);
+    background-color: #fff;
+    align-self: center;
+
+  }
+
+  #grid1 > div > img {
+    width: 300px;
+    height: 298px;
+    justify-content: flex-end;
+  }
+  #grid2 {
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: repeat(6, 300px);
+    background-color: #fff;
+    align-self: center;
+
+  }
+  #footer{
+    flex-direction:column; 
+  }
+}
+
+
+@media all and (min-width:315px) and (max-width:480px){
+  #grid1 {
+    grid-template-columns: repeat(1, 400px);
+    grid-template-rows: repeat(10, 300px);
+    background-color: #fff;
+    align-self: center;
+
+  }
+  #grid1 > div > img {
+    width: 300px;
+    height: 298px;
+    justify-content: flex-end;
+  }
+  #grid2 {
+    grid-template-columns: repeat(1, 400px);
+    grid-template-rows: repeat(12, 300px);
+    background-color: #fff;
+    align-self: center;
+
+  }
+  #footer{
+    flex-direction:column; 
+  }
+}
+
