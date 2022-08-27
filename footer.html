@@ -11,20 +11,37 @@
     <div id="navbar">
         <div>
             <p>CN-US$</p> 
-            <select id="help">
-                <option value="Help center">Help</option>
-                <option value="Help center">Help center</option>
-                <option value="Contact us">Contact us</option>
-                <option value="About us">About us</option>
-                <option value="Careers">Careers</option>
+
+
+
+            <select id="help"  name="formal" onchange="javascript:handleSelect(this)">
+                <option value="help.html">Help</option>
+                <option value="help.html">Help center</option>
+                <option value="about.html">Contact us</option>
+                <option value="about.html">About us</option>
+                <option value="about.html">Careers</option>
             </select>
+
+            <script type="text/javascript">
+                function handleSelect(elm)
+                {
+                   window.location = elm.value+"";
+                }
+              </script>
+
+
+
+
+
+
+
     
-            <p>Sign In</p> <p id="join">Join</p>
+            <a   target="_blank"   href="login.html"> <b>Sign In </b></a> <a   target="_blank"  href="join.html" id="join"><b>Join</b></a>
         </div>
         <div>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKyEuqiB8uBDJNjItv3pJcOtnRYu4i27TrLg&usqp=CAU" alt="">
-            <h2>WOMEN</h2>
-            <h2>MEN</h2>
+            <a target="_blank" href="index.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKyEuqiB8uBDJNjItv3pJcOtnRYu4i27TrLg&usqp=CAU" alt=""></a>
+            <a  target="_blank"   href="womens.html"><h2>WOMEN</h2></a>
+            <a  target="_blank"   href="mens.html"><h2>MEN</h2></a>
             <input style.width="60%" type="text"  placeholder="   Search (e.g. Valentino Dresses)">
        </div> 
         </div>
@@ -74,6 +91,7 @@
                 <p>Lyst News</p>
             </div>
         </div>
-    </div>
+         </div>    
 </body>
 </html>
+

@@ -4,8 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Navbar</title>
+    <title>Cart Page</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      href="https://www.lyst.com/favicon.ico"
+      type="image/icon type"
+    />
+    <style>
+      #container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+      }
+
+      @media all and (min-width: 312px) and (max-width: 540px) {
+        #container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    </style>
   </head>
   <body>
     <link
@@ -101,60 +119,44 @@
       </div>
     </div>
 
-    <div id="footer">
-      <div>
-        <img
-          src="https://consumersiteimages.trustpilot.net/business-units/4df6d77700006400050fea24-198x149-1x.avif"
-          alt=""
-        />
-        <img
-          src="https://cdn.trustpilot.net/brand-assets/4.1.0/stars/stars-4.5.svg"
-          alt=""
-        />
-        <p>Reviews 2,837 • Excellent</p>
-        <iframe
-          src="https://image.shutterstock.com/image-photo/kiev-ukraine-october-15-2019-260nw-1539544949.jpg"
-        ></iframe>
-        <button>Give a Review</button>
-        <p>Learn about the Lyst app for iPhone, iPad and Android.</p>
-        <p>© 2022 Lyst</p>
-      </div>
-      <div>
-        <div>
-          <h4>INTERNATIONAL</h4>
-          <p>Lyst - AU</p>
-          <p>Lyst - CA</p>
-          <p>Lyst - UK</p>
-          <p>Lyst - Österreich</p>
-          <p>Lyst - Schweiz</p>
-          <p>Lyst - Deutschland</p>
-          <p>Lyst - España</p>
-          <p>Lyst - France</p>
-          <p>Lyst - Italia</p>
-          <p>Lyst - 日本</p>
-          <p>Lyst - België</p>
-          <p>Lyst - Nederland</p>
-        </div>
-        <div>
-          <h4>HELP AND INFO</h4>
-          <p>Help center</p>
-          <p>About us</p>
-          <p>Shipping policy</p>
-          <p>Returns policy</p>
-          <p>Payments</p>
-          <p>Refund policy</p>
-          <p>Developers</p>
-          <p>Careers</p>
-          <p>Contact</p>
-          <p>Terms & conditions</p>
-          <p>Privacy & cookie policy</p>
-          <p>Intellectual property</p>
-          <p>Categories</p>
-          <p>Become a partner</p>
-          <p>Lyst Insights</p>
-          <p>Lyst News</p>
-        </div>
-      </div>
-    </div>
+    <h1>Cart Page</h1>
+    <h1>Total cart-items: <span id="total-items"></span></h1>
+    <h1>Total Cost: <span id="total-cost"></span></h1>
+    <div id="container"></div>
   </body>
 </html>
+
+<script>
+  let products = JSON.parse(localStorage.getItem("products")) || [];
+
+  document.querySelector("#total-items").innerText = products.length;
+
+  let total = products.reduce(function (acc, el, i) {
+    return acc + Number(el.price);
+  }, 0);
+
+  document.querySelector("#total-cost").innerText =
+    "₹ " + total + "  including taxes";
+  products.map(function (el, i) {
+    let box = document.createElement("div");
+
+    let prod_image = document.createElement("img");
+    prod_image.setAttribute("src", el.image_url);
+    let title = document.createElement("p");
+    title.innerText = el.name;
+    let pricetag = document.createElement("P");
+    pricetag.innerText = el.price;
+    let btn = document.createElement("button");
+    btn.innerText = "Remove";
+
+    btn.addEventListener("click", function () {
+      event.target.parentNode.remove();
+      products.splice(i, 1);
+
+      localStorage.setItem("products", JSON.stringify(products));
+    });
+
+    box.append(prod_image, title, pricetag, btn);
+    document.querySelector("#container").append(box);
+  });
+</script>

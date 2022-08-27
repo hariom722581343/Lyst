@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lyst | Login</title>
+    <title>Lyst | Join</title>
+    <link rel="stylesheet" href="styles.css">
     <link
       rel="icon"
       href="https://www.lyst.com/favicon.ico"
       type="image/icon type"
     />
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <link
@@ -104,21 +104,27 @@
   </div>
 </div>
 </br>
-    <div id="form">
+    <div id="join2">
         <div>
-            <form >
+            <form action="Log-in">
                 <div id="login">
                     <div><a href="join.html">New to Lyst?</a></div>
                     <div><a href="login.html">Already a member</a></div>
                 </div>      
-                <h3>Sign in</h3>
+                <h3>Search thousands of fashion brands and stores all in one place</h3>
+                <p>We just need a few details from you first.</p>
                 <h4>Email address</h4>
                 <input type="text" placeholder="Enter your email address" id="email">
-                <input type="submit" value="Sign in" id="email2"> 
+                <h4>Password</h4>
+                <input type="text" placeholder="min 8 characters" id="pass">
+            </br>
+                <input type="checkbox"> I would like to hear about products, services, and sales, including personalized email alerts from Lyst. You can unsubscribe at any time.</input>
+                <input type="submit" value="Join Lyst" class="signin" id="email2"> 
                 <p>or</p>
-               <button type="submit" value=" Continue with Facebook" id="fb"><i class="fa-brands fa-facebook"></i>  Continue with Facebook</button>
+                 <button type="submit" value=" Continue with Facebook" id="fb"><i class="fa-brands fa-facebook"></i>  Continue with Facebook</button>
                 <button type="submit" value="Continue with  Google" id="google"><i class="fa-brands fa-google"></i> Continue with  Google</button>
                 <button type="submit" value="Continue with Apple" id="apple"><i class="fa-brands fa-apple"></i> Continue with Apple</button>
+                <p>By creating an account, you consent to Lyst’s <b>Terms & Conditions.</b> To learn more about how Lyst uses and protects your personal data, please read Lyst’s <b>Privacy Policy.</b></p>
             </form>
         </div>
         <div>
@@ -135,7 +141,7 @@
 
 
 
-    <!-- <div id="footer">
+    <div id="footer">
         <div>
             <img src="https://consumersiteimages.trustpilot.net/business-units/4df6d77700006400050fea24-198x149-1x.avif" alt="">
             <img src="https://cdn.trustpilot.net/brand-assets/4.1.0/stars/stars-4.5.svg" alt="">
@@ -181,20 +187,21 @@
                 <p>Lyst News</p>
             </div>
         </div>
-    </div> -->
+    </div>
 </body>
 </html>
+
+
 <script>
 let arr = JSON.parse(localStorage.getItem("email")) || [];
 document.querySelector("#email2").addEventListener("click", function (e) {
   e.preventDefault();
   let email = document.querySelector("#email").value;
-  if (arr.includes(email)) {
-    alert("Sign in Successfull...");
-    alert("Continue your journey with Lyst Best Products...");
-  } else {
-    alert("invalid credentials");
-  }
-});
-</script>
+  arr.push(email);
+  localStorage.setItem("email", JSON.stringify(arr));
 
+  alert("Sign in Successfull...");
+  alert("Continue your journey with Lyst Best Products...");
+});
+
+</script>
